@@ -1,4 +1,7 @@
 <?php
+
+require 'config.php';
+
 $scheme = $_SERVER['REQUEST_SCHEME'];
 
 $host = $_SERVER['HTTP_HOST'];
@@ -15,8 +18,6 @@ header('Content-type: text/plain');
 foreach($msg as $key => $m) {
 	header("X-Toggen-About-$key: $m");
 }
-
-$acceptedOrigins = [ 'https://ipv4.toggen.com.au', 'https://ipv6.toggen.com.au', 'https://toggen.com.au' ];
 
 $origin = $_SERVER['HTTP_ORIGIN'] ?? null;
 
