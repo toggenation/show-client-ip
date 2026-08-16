@@ -6,9 +6,19 @@
     <title>IP Address</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <style>
-	body {
-		  font-family: Arial, Helvetica, sans-serif;
-	}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        #container {
+            text-align: center;
+        }
     </style>
     <script src="settings.js"></script>
     <script>
@@ -39,8 +49,9 @@
     </script>
 </head>
 <body>
-    <div style="margin-bottom:40px;" id="ipv4"></div>
-    <div id="ipv6"></div>
+    <div id="container">
+        <div style="margin-bottom:40px;" id="ipv4"></div>
+        <div id="ipv6"></div>
+    </div>
 </body>
 </html>
-
