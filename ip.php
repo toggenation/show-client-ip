@@ -142,7 +142,7 @@ try {
 		exit("Error: Invalid IP address detected");
 	}
 
-	echo "Type: IPv{$type}: " . $ip;
+	echo "IPv{$type}: " . $ip;
 } catch (Exception $e) {
 	http_response_code(500);
 	exit("Error: Internal server error");
